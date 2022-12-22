@@ -28,7 +28,7 @@ const Technologies = () =>  (
           <ListTitle>Back-End</ListTitle>
           <ListParagraph>
             Experience with <br />
-            React.js
+            Node.js and Databases
           </ListParagraph>
         </ListContainer>
       </ListItem>
