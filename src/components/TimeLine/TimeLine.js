@@ -8,7 +8,7 @@ const TOTAL_CAROUSEL_COUNT = TimeLineData.length;
 
 const Timeline = () => {
   // const [activeItem, setActiveItem] = useState(0);
-  // const carouselRef = useRef();
+  const carouselRef = useRef();
 
   // const scroll = (node, left) => {
   //   return node.scrollTo({ left, behavior: 'smooth' });
@@ -43,9 +43,15 @@ const Timeline = () => {
   // }, []);
 
   return (
-    <div>
-      Timeline
-    </div>
+    <Section id='about'>
+      <SectionTitle>About Me</SectionTitle>
+      <SectionText>
+        My Software developer experience started in 2018 when I your taught myself Ruby on Rails for 1 year. 
+        Thereafter, I attended an four months  intensive BootCamp here I learnt JavaScript, React.js, Node.js, Express.js, MongoDB. 
+        My educational background includes a masters degree in process engineering from University of Lagos, Akoka Lagos Nigeria.
+      </SectionText>
+      <CarouselContainer ref={carouselRef}></CarouselContainer>
+    </Section>
   );
 };
 
